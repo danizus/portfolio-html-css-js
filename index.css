@@ -16,6 +16,7 @@ html, body {
     border-radius: 50%;
     position: absolute;
     z-index: 9999999;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s ;
     
 }
 #main{
@@ -68,6 +69,15 @@ height: 100vh;
     padding:40px ;
     
 }
+.bounding{
+    width: fit-content;
+    
+    overflow: hidden;
+}
+.bounding-elem{
+  transform: translateY(100%);
+}
+
 
 #heading h1{
     line-height: 1;
@@ -81,18 +91,25 @@ height: 100vh;
 #heading #second-heading h5{
     font-size: 1vw;
 }
-.heading {
+.block-text {
     width: fit-content;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 
 }
-.heading h5{
+.block-text h5{
     text-align: right;
 
 }
 #small-heading{
     text-align: right;
     padding: 3vw;
-    margin-top: 4vh;
+    display:flex ;
+    align-items: end;
+    flex-direction: column;
+   
 }
 #small-heading h5{
  font-size: 1vw;
